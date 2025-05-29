@@ -10,20 +10,18 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity(name="medicine")
+@Entity(name="medicine_patient")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class medicine {
+public class medicine_patient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="medicineID", nullable = false)
-        private int medicineID;
-    @Column(name="nombre", nullable = false)
-        private String nombre;
-    @Column(name="descripcion", nullable = false)
-        private String descripcion;
-    @Column(name="tiempo", nullable = false)
-        private double tiempo;
+    @Column(name="medicine_patientId", nullable = false)
+        private int medicine_patientId;
+    @Column(name="patientId", nullable = false)
+        private patient patientId;
+    @Column(name="medicineId", nullable = false)
+        private medicine medicineId;
 }

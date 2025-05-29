@@ -18,12 +18,12 @@ import lombok.Setter;
 public class patient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="PatientId")
+    @Column(name="PatientId", nullable = false)
         private int PatientId;
-    @Column(name="nombre")
+    @Column(name="nombre", nullable = false)
         private String nombre;
-    @Column(name="correo")
+    @Column(name="correo", nullable = false)
         private String correo;
-    @Column(name="confirmacion")
+    @Column(name="confirmacion", nullable = false)
         private aceptacion confirmacion;
 }
