@@ -1,6 +1,7 @@
 package com.sena.hospital.DTO;
 
-import com.sena.hospital.model.aceptacion;
+import java.time.LocalTime;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -8,10 +9,11 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
-public class patientDTO {
+@AllArgsConstructor
+public class MedicamentoDTO {
+    private Long id;
     private String nombre;
-    private String correo;
-    private aceptacion confirmacion;
+    private String dosis;
+    private LocalTime horario;
 }

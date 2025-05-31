@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignación de Medicamentos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <h2>Asignación de Medicamentos a Pacientes</h2>
+
+    <form id="registroAsignacion">
+        <h3>Asignar Medicamento</h3>
+        
+        <label for="pacienteId">Paciente:</label>
+        <select id="pacienteId" name="pacienteId" required></select>
+
+        <label for="medicamentoId">Medicamento:</label>
+        <select id="medicamentoId" name="medicamentoId" required></select>
+
+        <label for="frecuencia">Frecuencia (ej. cada 8 horas):</label>
+        <input type="text" id="frecuencia" name="frecuencia" required>
+
+        <button type="submit">Asignar</button>
+    </form>
+
+    <h3>Lista de Asignaciones</h3>
+    <table id="tablaAsignaciones">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Paciente</th>
+                <th>Medicamento</th>
+                <th>Frecuencia</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="./js/pacientes_medicinas.js"></script>
+</body>
+</html>

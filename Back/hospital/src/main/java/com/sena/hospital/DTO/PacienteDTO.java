@@ -7,9 +7,11 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
-public class historialDTO {
-    private patientDTO correo;
-    private medicineDTO tiempo;
+@AllArgsConstructor
+public class PacienteDTO {
+    private Long id;
+    private String nombre;
+    private String email;
+    private boolean recibirNotificaciones;
 }

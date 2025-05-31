@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Medicamentos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <h2>Gestión de Medicamentos</h2>
+
+    <form id="registroMedicamento">
+        <h3>Registrar Medicamento</h3>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="descripcion">Descripción:</label>
+        <input type="text" id="descripcion" name="descripcion" required>
+
+        <label for="dosis">Dosis:</label>
+        <input type="text" id="dosis" name="dosis" required>
+
+        <button type="submit">Registrar</button>
+    </form>
+
+    <h3>Lista de Medicamentos</h3>
+    <table id="tablaMedicamentos">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Dosis</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="./js/medicamentos.js"></script>
+</body>
+</html>
